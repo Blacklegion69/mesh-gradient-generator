@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gradient: #7de2fc;
+
+    --background: 204 61.75% 5.92%;
+    --foreground: 204 9.5% 98.7%;
+
+    --muted: 204 47.5% 22.2%;
+    --muted-foreground: 204 9.5% 57.4%;
+
+    --popover: 204 46% 9.62%;
+    --popover-foreground: 204 9.5% 98.7%;
+
+    --card: 204 46% 9.62%;
+    --card-foreground: 204 9.5% 98.7%;
+
+    --border: 204 47.5% 22.2%;
+    --input: 204 47.5% 22.2%;
+
+    --primary: 204 95% 74%;
+    --primary-foreground: 204 9.5% 7.4%;
+
+    --secondary: 204 47.5% 22.2%;
+    --secondary-foreground: 204 9.5% 98.7%;
+
+    --accent: 204 47.5% 22.2%;
+    --accent-foreground: 204 9.5% 98.7%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 204 9.5% 98.7%;
+
+    --ring: 204 95% 74%;
+  }
+
+  .dark {
+    --gradient: #091321;
+    --background: 228 97.85% 98.16%;
+    --foreground: 228 5.699999999999999% 0.32%;
+
+    --muted: 228 5.699999999999999% 90.8%;
+    --muted-foreground: 228 2.8499999999999996% 40.8%;
+
+    --popover: 228 44.400000000000006% 90.8%;
+    --popover-foreground: 228 5.699999999999999% 0.4%;
+
+    --card: 228 44.400000000000006% 90.8%;
+    --card-foreground: 228 5.699999999999999% 0.4%;
+
+    --border: 228 10.7% 89.32%;
+    --input: 228 10.7% 89.32%;
+
+    --primary: 228 57% 8%;
+    --primary-foreground: 228 1.14% 90.8%;
+
+    --secondary: 228 2.8499999999999996% 95.4%;
+    --secondary-foreground: 228 4.42% 10.8%;
+
+    --accent: 228 2.8499999999999996% 95.4%;
+    --accent-foreground: 228 4.42% 10.8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 228 57% 8%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .dot-dark {
+    background-color: #000000;
+    opacity: 0.8;
+    background-image: radial-gradient(
+        #ffffff 0.35000000000000003px,
+        transparent 0.35000000000000003px
+      ),
+      radial-gradient(
+        #ffffff 0.35000000000000003px,
+        #000000 0.35000000000000003px
+      );
+    background-size: 14px 14px;
+    background-position:
+      0 0,
+      7px 7px;
+  }
+  .dot {
+    background-color: #ffffff;
+    opacity: 1;
+    background-image: radial-gradient(#000000 0.55px, transparent 0.55px),
+      radial-gradient(#000000 0.55px, #ffffff 0.55px);
+    background-size: 22px 22px;
+    background-position:
+      0 0,
+      11px 11px;
+  }
+  .smoke:nth-child(2n + 1) {
+    background-color: rgba(200, 200, 200, 0.25);
+  }
+}
