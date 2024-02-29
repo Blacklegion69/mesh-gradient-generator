@@ -16,6 +16,7 @@ const Displayslice = () => {
           className="w-full rounded h-[200px]"
         ></div>
       </Canvas>
+      <Card className="w-full max-h-[100px] overflow-y-scroll my-2 p-2">{background}</Card>
     </Card>
   );
 };
