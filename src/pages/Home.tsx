@@ -10,7 +10,7 @@ const Home = () => {
   const { controller } = useSelector(meshSelector);
 
   return (
-    <div className="w-full gap-y-5 min-h-screen flex items-center flex-col relative dot-dark dark:dot-dark">
+    <div className="container w-full gap-y-5 min-h-screen flex items-center flex-col relative dot-dark dark:dot-dark">
       <Displayslice />
       <Backgroundslice />
       <Generateslice />
